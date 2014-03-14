@@ -173,7 +173,8 @@ public final class CSVSerde implements SerDe {
   public Class<? extends Writable> getSerializedClass() {
     return Text.class;
   }
-  
+ 
+  @Override
   public SerDeStats getSerDeStats() {
     return null;
   }
